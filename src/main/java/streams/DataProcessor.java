@@ -73,7 +73,11 @@ public class DataProcessor {
     }
 
     public static List<Integer> getSortedAges(List<Student> students) {
-        return students.stream().map(Student::getAge).sorted().collect(Collectors.toList());
+        return students
+                .stream()
+                .map(Student::getAge)
+                .sorted()
+                .collect(Collectors.toList());
     }
 
     // endregion
